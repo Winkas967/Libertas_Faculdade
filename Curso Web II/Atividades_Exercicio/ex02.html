@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2b</title>
+</head>
+<body>
+  <h1>Lan House JS</h1>
+
+  <p>Valor por 15min de uso R$:
+    <input type="number" id="valor" step="0.01">
+  </p>
+
+  <p>Tempo de uso do Cliente:
+    <input type="number" id="tempo">
+  </p>
+
+  <button onclick="calcularValor()">Calcular Valor a Pagar</button>
+
+  <h3 id="resultado"></h3>
+
+  <script>
+    function calcularValor() {
+      var valor = Number(document.getElementById("valor").value);
+      var tempo = Number(document.getElementById("tempo").value);
+      
+      var blocos = Math.ceil(tempo / 15);
+
+      var total = blocos * valor;
+
+      document.getElementById("resultado").innerText = "Valor a Pagar R$: " + total.toFixed(2);
+    }
+  </script>
+</body>
+</html>

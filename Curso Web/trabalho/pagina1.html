@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina01</title>
+</head>
+<body>
+    <img src="img/Libertas.png" alt="Logo" width="200"><br><br>
+
+    <a href="pagina1.html">Desenvolvimento Web I</a><br>
+    <a href="pagina2.html">Laboratório de Programação</a>
+
+    <h1> Avaliação da Disciplina Desenvolvimento Web I</h1>
+
+    <h2> Informações da Disciplina</h2>
+
+    <p>Bem-vindos à página de avaliação da disciplina de Desenvolvimento Web I! Nesta página, você encontrará informações importantes,
+        poderá visualizar seu desempenho e se cadastrar para futuras atividades.</p>
+
+    <h3> Objetivos da Avaliação</h3>
+
+    <p> O principal objetivo desta avaliação é verificar o seu entendimento sobre os conceitos abordados em sala de aula e fornecer feedback para o seu desenvolvimento.</p>
+
+    <h3>Critérios de Avaliação</h3>
+
+    <p> A sua avaliação será baseada nos seguintes critérios:</p>
+
+    <ul>
+        <li>Participação em aula</li>
+        <li>Entrega de trabalhos</li>
+        <li>Desempenho na prova final</li>
+    </ul>
+
+    <h2> Tabela de Notas</h2>
+
+    <p>A seguir, você pode conferir a tabela com as notas parciais da turma. Caso haja alguma dúvida, entre em contato com o professor.</p>
+
+    <table border="1" style="border-collapse: collapse;">
+    <tr>
+        <th>Nome do aluno</th>
+        <th>Participação</th>
+        <th>Trabalho1</th>
+        <th>Trabalho2</th>
+        <th>Prova Final</th>
+        <th>Média</th>
+    </tr>
+    <tr>
+        <td>João Silva</td>
+        <td>8,5</td>
+        <td>9,0</td>
+        <td>8,0</td>
+        <td>7,5</td>
+        <td>8,2</td>
+    </tr>
+    <tr>
+        <td>Maria Oliveira</td>
+        <td>9,0</td>
+        <td>8,5</td>
+        <td>9,5</td>
+        <td>8,0</td>
+        <td>8,8</td>
+
+    </tr>
+    <tr>
+        <td>Carlos Pereira</td>
+        <td>7,0</td>
+        <td>7,5</td> 
+        <td>6,5</td> 
+        <td>7,0</td> 
+        <td>7,0</td> 
+    </tr>
+    <tr>
+        <td colspan="6">Média da turma: 8,0</td>
+    </tr>
+    </table>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <p> Preencha o formulário abaixo para se cadastrar nas próximas atividades de avaliação da disciplina.</p>
+
+    <form action="pagina1.html" method="post">
+    <fieldset>
+
+    <legend>Dados Pessoais</legend>
+
+    <label for="nome_id">Nome completo:</label>
+    <input type="text" name="nome" id="nome_id"><br>
+
+    <label for="email_id">Email</label>
+    <input type="email" name="email" id="email_id"><br>
+
+    <input type="radio" name="genero" value="Feminino">Feminino
+    <input type="radio" name="genero" value="Masculino">Masculino<br>
+
+    </fieldset>
+    </form>
+
+    <form action="pagina1.html" method="post">
+    <fieldset>
+
+    <legend>Dados do Curso</legend>
+
+    <label for="numero_id">Número da Matrícula:</label>
+    <input type="text" name="numero" id="numero_id"><br>
+
+    <label for="turma_id">Turma:</label>
+    <select name="turma" id="turma-id">
+        <option value="A">Turma A</option>
+        <option value="B">Turma B</option>
+        <option value="C">Turma C</option>></select>
+    </fieldset>
+
+    <fieldset>
+    <legend>Comentários (opcional)</legend>
+    <textarea name="comentarios" id="comentarios_id" rows="5" cols="50"></textarea>
+    </fieldset>
+
+    </form>
+
+    <fieldset>
+        <input type="submit" name="cadastrar" value="Cadastrar">
+        <input type="reset" name="reset" value="Reset">
+    </fieldset><br>
+
+    <a href="pagina1.html">Voltar ao topo</a>
+
+</body>
+</html>

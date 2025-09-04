@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2c</title>
+</head>
+<body>
+  <h1>Supermercado JS</h1>
+
+  <p>Produto:
+    <input type="text" id="produto">
+  </p>
+
+  <p>Preço R$:
+    <input type="number" id="preco" step="0.01">
+  </p>
+
+  <button onclick="verPromocao()">Ver Promoção</button>
+
+  <h3 id="mensagem1"></h3>
+  <h4 id="mensagem2"></h4>
+
+  <script>
+    function verPromocao() {
+      const produto = document.getElementById("produto").value;
+      const preco = Number(document.getElementById("preco").value);
+
+      const desconto = preco / 2;
+      const total = (2 * preco) + desconto;
+
+      document.getElementById("mensagem1").innerText = `${produto} - Promoção: Leve 3 por R$: ${total.toFixed(2)}`;
+      document.getElementById("mensagem2").innerText = `O 3º produto custa apenas R$: ${desconto.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>

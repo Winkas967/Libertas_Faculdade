@@ -1,0 +1,15 @@
+<script>
+    const usuarioLogado = true
+    const isAdmin = false
+
+    if (usuarioLogado) {
+        alert('Bem vindo à área logada!')
+        if (isAdmin) {
+            alert('Você tem acesso total!')
+        } else {
+            alert('Você tem acesso limitado.')
+        }
+    } else {
+        alert('Por favor, faça login para continuar.')
+    }
+</script>

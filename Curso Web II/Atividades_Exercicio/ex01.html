@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2a</title>
+</head>
+<body>
+  <h1>Farmácia JS</h1>
+
+  <p>Medicamento: 
+    <input type="text" id="medicamento">
+  </p>
+
+  <p>Preço R$: 
+    <input type="number" id="preco" step="0.01">
+  </p>
+
+  <button onclick="mostrarPromocao()">Mostrar Promoção</button>
+
+  <h2 id="promocaoTitulo"></h2>
+  <h3 id="promocaoValor"></h3>
+
+  <script>
+    function mostrarPromocao() {
+      var nome = document.getElementById("medicamento").value;
+      var preco = Number(document.getElementById("preco").value);
+
+      var total = 2 * preco;
+      var promocao = Math.floor(total);
+
+      document.getElementById("promocaoTitulo").innerText = "Promoção de " + nome;
+      document.getElementById("promocaoValor").innerText = "Leve 2 por apenas R$: " + promocao.toFixed(2);
+    }
+  </script>
+</body>
+</html>
